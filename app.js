@@ -3,6 +3,16 @@
  * @author Professor José de Assis
  * @link https://joseassis.com.br/
  */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(() => {
+            console.log("Service Worker registrado.")
+        })
+}
+
+
+
 
 function calcular() {
     // pegar valores dos inputs
@@ -18,3 +28,4 @@ function calcular() {
     }
 
 }
+
