@@ -1,7 +1,7 @@
 {
     "name": "Gasolina ou Etanol",
     "short_name": "Flex",
-    "start_url": "/etagas",
+    "start_url": "/etagas/",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#faa300",
