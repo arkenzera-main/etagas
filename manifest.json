@@ -1,5 +1,5 @@
 {
-    "name": "Gasolina ou Etanol",
+    "name": "Gasolina ou Etanol?",
     "short_name": "Flex",
     "start_url": "/etagas/",
     "scope": "/",
@@ -7,9 +7,9 @@
     "theme_color": "#faa300",
     "background_color": "#fff",
     "orientation": "portrait-primary",
-    "description": "Aplicativo para verificar o combustível que vale mais em carros flex - gasolina ou etanol",
+    "description": "Aplicativo para verificar o combustível mais vantajoso em carros flex.",
     "dir": "ltr",
-    "lang": "pt-BR",
+    "lang": "pt-BR",    
     "icons": [
         {
             "src": "./img/flex48.png",
@@ -49,16 +49,16 @@
     ],
     "screenshots": [
         {
-            "src": "./img/screenshot1.png",
-            "sizes": "367x652",
-            "type": "image/png",
-            "form_factor": "narrow"
+           "src": "./img/screenshot1.png",
+           "sizes": "367x652",
+           "type": "image/png",
+           "form_factor": "narrow"
         },
         {
             "src": "./img/screenshot2.png",
             "sizes": "942x667",
             "type": "image/png",
             "form_factor": "wide"
-        }
+         }
     ]
 }

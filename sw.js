@@ -1,14 +1,14 @@
 /**
- * Service Worker
+ * ServiceWorker
  * @author Bruno Politi Romero
  */
 
 // Instalação do Service Worker
 self.addEventListener('install', (event) => {
-    console.log("Instalando o Service Worker...", event)
+    console.log("Instalando o ServiceWorker...", event)
     // Pré carregamento em cache
     event.waitUntil(
-        // Armazenar em cache:
+        //armazenar em cache:
         caches.open('static')
             .then((cache) => {
                 console.log("Pré carregamento dos arquivos do app")
@@ -26,14 +26,14 @@ self.addEventListener('install', (event) => {
 
 // Ativação do Service Worker
 self.addEventListener('activate', (event) => {
-    console.log("Ativando o Service Worker...", event)
-    return self.clients.claim() // Garantir o serviço em todos os documentos do aplicativo
+    console.log("Ativando o ServiceWorker...", event)
+    return self.clients.claim() //garantir o serviço em todos os documentos do app
 })
 
 // Escutando requisições "buscando algo"
 self.addEventListener('fetch', (event) => {
     // console.log("Buscando algo...", event)
-    // Armazenar em cache(arquivos estáticos pré-carregados) todas as requisições
+    // armazener em cache(arquivos estático pré carregados) todas as requisições
     event.respondWith(
         caches.match(event.request)
             .then((response) => {
